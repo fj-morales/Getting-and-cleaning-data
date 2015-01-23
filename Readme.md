@@ -6,10 +6,11 @@
 information to create a new tidy date set according to Coursera - Getting and 
 Cleaning Data course project.
 
-`run_analysis.R` merges identifies subject and activity in train and test observations, 
-then puts train and test data together. This script insolate mean an standard 
-deviation measurements and assign descriptive names to its variables. Finally, calculates 
-the average of each measurement aggregated by activity for every subject.
+`run_analysis.R` identifies subject and activity in train and test observations, 
+then puts train and test data together. This script insolates mean an standard 
+deviation measurements and assigns descriptive names to variables. Finally, it calculates 
+the average of each measurement aggregated by activity for every subject and saves tidy 
+data set on a file.
 
 This script must be placed in the same path as `./data` directory.
 
