@@ -1,6 +1,10 @@
-# GETTING AND CLEANING DATA PROJECT
-# Author: Francisco Morales
+#################################################
+# *************************************
+# * GETTING AND CLEANING DATA PROJECT *
+# *************************************
+# run_analysis.R
 # Version: 1.0
+# Author: Francisco Morales
 # class: getdata-010
 # 2015/01/23
 #################################################

@@ -6,24 +6,33 @@
 information to create a new tidy date set according to Coursera - Getting and 
 Cleaning Data course project.
 
-The input files are:
-
-from `./data/` directory: 
-  * `features.txt` 
-  * `activity_labels.txt`
-  
-from `./data/train/` directory:  
-  * `X_train.txt` 
-  * `y_train.txt` 
-  * `subject_train.txt`
-  
-from `./data/test/` directory:
-  * `X_test.txt`
-  * `y_test.txt`, 
-  * `subject_test.txt`
-
+`run_analysis.R` merges identifies subject and activity in train and test observations, 
+then puts train and test data together. This script insolate mean an standard 
+deviation measurements and assign descriptive names to its variables. Finally, calculates 
+the average of each measurement aggregated by activity for every subject.
 
 This script must be placed in the same path as `./data` directory.
+
+Input files:
+
+from `./data/` directory: 
+  * features.txt
+  * activity_labels.txt
+  
+from `./data/train/` directory:  
+  * X_train.txt
+  * y_train.txt
+  * subject_train.txt
+  
+from `./data/test/` directory:
+  * X_test.txt
+  * y_test.txt
+  * subject_test.txt
+
+Output file:
+
+  * tidy_DT.txt
+
 
 ### CodeBook.md
 
