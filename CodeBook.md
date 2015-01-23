@@ -26,6 +26,7 @@ tidy data set according to project's instructions.
       were replaced with `activity_labels.txt` descriptive names. 
    
 4. Appropriately labels the data set with descriptive variable names. 
+  On `extract_DT`
 
    * All special characters were removed from varible names.
    * All abbreviations were replaced by complete words on variable names.
