@@ -26,8 +26,10 @@ tidy data set according to project's instructions.
       were replaced with `activity_labels.txt` descriptive names. 
    
 4. Appropriately labels the data set with descriptive variable names. 
+  
   On `extract_DT`
-
+  
+   * `activityID` variable was renamed just as `activity`.
    * All special characters were removed from varible names.
    * All abbreviations were replaced by complete words on variable names.
    * All words in column names, except the first one, were capitalized to ease 
@@ -36,10 +38,9 @@ tidy data set according to project's instructions.
 5. From the data set in step 4, creates a second, independent tidy data set 
    with the average of each variable for each activity and each subject. 
    
-   *  To create tidy data set, observations on `extrat_DT` were grouped by 
-   subjectID then activity. mena() function was applied to all left columns
-   to gather their average.
-   *  The resulting `tidy_DT` data set was sorted by subject then activity descending
-   order.
+   *  `tidy_DT` data set contains the observations from `extract_DT` where subjectID then activity 
+      variables were grouped and `mean()` function was applied to measurement variables
+      to gather their average.
+   *  `tidy_DT` was sorted by subjectID then activity in ascending order.
 
 ### Variables
