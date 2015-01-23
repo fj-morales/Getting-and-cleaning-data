@@ -80,8 +80,8 @@ setnames(complete_DT, old = 1:dim(complete_DT)[2], new= c("subjectID", "activity
 library(dplyr)
 extract_DT <- select(complete_DT,1,2,matches("mean\\(|std\\(", ignore.case = FALSE))
 
-# Set activity_ID as factors 
-extract_DT$activity_ID <- as.factor(extract_DT$activity_ID)
+# Set activityID as factors 
+extract_DT$activityID <- as.factor(extract_DT$activityID)
 
 #########################################################################################
 #
@@ -91,7 +91,7 @@ extract_DT$activity_ID <- as.factor(extract_DT$activity_ID)
 
 # Replacing the factor numeric levels for descriptive activity names from activity_labels.txt file
 activity_labels <- fread("./data/activity_labels.txt", stringsAsFactors = FALSE)
-levels(extract_DT$activity_ID) <- activity_labels$V2
+levels(extract_DT$activityID) <- activity_labels$V2
 setnames(extract_DT, colnames(extract_DT)[2], "activity")
 
 #########################################################################################
