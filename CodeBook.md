@@ -1,4 +1,4 @@
-### Codebook
+## Codebook
 
 This document describes the necessary transformations and variables contained in the 
 tidy data set according to project's instructions.

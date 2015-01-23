@@ -1,6 +1,6 @@
 ## Getting and cleaning data project
 
-# run_analysis.R script
+### run_analysis.R script
 
 `run_analysis.R` script uses "Human Activity Recognition Using Smartphones Data Set" 
 information to create a new tidy date set according to Coursera - Getting and 
@@ -25,7 +25,7 @@ from `./data/test/` directory:
 
 This script must be placed in the same path as `./data` directory.
 
-# CodeBook.md
+### CodeBook.md
 
 This document describes the transformations `run_analysis.R` performs over the 
 train and test data sets in order to get a processed tidy data set.
