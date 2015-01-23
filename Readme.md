@@ -1,5 +1,46 @@
-## Getting and cleaning data project
-### Coursera
+## Readme.md - Getting and cleaning data project
+### Tidy data set
+
+In this document are described the necessary transformations for tidying 
+"Human Activity Recognition Using Smartphones Data Set" according project's 
+instructions as follow:
+
+i. Merges the training and the test sets to create one data set.
+
+a) The function setLabel() combines train or test data set with its corresponding subject
+   and activity label IDs in order to create a new data set containing complete observations
+   for each subject.
+   
+b) Labeled train and test data were binded into a complete data set by rows, with train data on top.
+ 
+ii. Extracts only the measurements on the mean and standard deviation for each measurement. 
+
+a) To extract mean and standard deviation measurements, complete data set was filtered
+   by column names containing only "mean()" and "std()" strings. It was created an extracted data set
+   
+3. Uses descriptive activity names to name the activities in the data set
+
+a) To make things faster and easier, activity IDs were converted.Activity 
+   variable IDs were replaced by activity_labels.txt descriptive names. 
+   
+4. Appropriately labels the data set with descriptive variable names. 
+
+a) All special characters were removed from varible names.
+b) All abbreviations were replaced by complete words on variable names.
+c) All words in column names, except first, were capitalized to ease 
+   readibility.
+
+5. From the data set in step 4, creates a second, independent tidy data set 
+   with the average of each variable for each activity and each subject. 
+   
+a) To create tidy data set observations on extracted data were grouped by 
+   subjectID then activity. mena() function was applied to all left columns
+   to gather their average.
+b) The resulting tidy data set was sorted by subject then activity descending
+   order.
+   
+
+
 
 
 
