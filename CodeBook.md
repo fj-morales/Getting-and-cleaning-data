@@ -7,7 +7,7 @@ tidy data set according to project's instructions.
 
 1. Merges the training and the test sets to create one data set.
 
-   * `setLabel` function combines train or test data set with its corresponding subject
+   * `setLabel` function combines train or test data sets with their corresponding subject
    and activity label IDs in order to create a new data set containing complete observations
    for each subject.
    * Labeled train and test data were binded into a complete data set by rows, with train data on top.
