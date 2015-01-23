@@ -12,7 +12,7 @@ tidy data set according to project's instructions.
    * Once identified subject and activity IDs, train and test sets were binded into a 
      new data set called `complete_DT`. Train data is on top.
    * `complete_DT` first two columns were named subjectID and activityID respectively. 
-     The remaining columns were named based on `features.txt` labels.
+     The remaining columns were named based on `features.txt` labels keeping the same order.
  
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 
