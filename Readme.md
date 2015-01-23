@@ -1,4 +1,5 @@
-### Coursera Project 
+### Getting and cleaning data project
+## Coursera
 
 
 
