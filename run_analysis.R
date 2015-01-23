@@ -64,7 +64,7 @@ complete_DT <- rbind(train_DT, test_DT)
 # Naming columns according to features.txt file
 
 feat_label <- read.table("./data/features.txt", stringsAsFactors = FALSE, sep = " ")
-setnames(complete_DT, old = 1:dim(complete_DT)[2], new= c("subject_ID", "activity_ID", feat_label[,2]))
+setnames(complete_DT, old = 1:dim(complete_DT)[2], new= c("subjectID", "activityID", feat_label[,2]))
 
 ###################################################################################################
 #

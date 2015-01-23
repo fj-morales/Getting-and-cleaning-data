@@ -11,29 +11,31 @@ tidy data set according to project's instructions.
       observations contained in train and test data sets.
    * Once identified subject and activity IDs, train and test sets were binded into a 
      new data set called `complete_DT`. Train data is on top.
+   * `complete_DT` first two columns were named subjectID and activityID respectively. 
+     The remaining columns were named based on `features.txt` labels.
  
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 
    *  To extract mean and standard deviation measurements, `complete_DT` was filtered selecting 
-   only the columns names that contain "mean()" and "std()" strings. The resulting 
-   data became `extract_DT` data set.
+   only the columns that contain "mean()" and "std()" in their names. The resulting 
+   data set became `extract_DT`.
    
 3. Uses descriptive activity names to name the activities in the data set
 
-   *  To make things faster and easier, activity IDs were converted to factors. Activity 
-   variable IDs were replaced by activity_labels.txt descriptive names. 
+   *  Activity IDs were converted to factors to keep things easy. Activity factor levels
+      were replaced with `activity_labels.txt` descriptive names. 
    
 4. Appropriately labels the data set with descriptive variable names. 
 
    * All special characters were removed from varible names.
    * All abbreviations were replaced by complete words on variable names.
-   * All words in column names, except first, were capitalized to ease 
+   * All words in column names, except the first one, were capitalized to ease 
    readibility.
 
 5. From the data set in step 4, creates a second, independent tidy data set 
    with the average of each variable for each activity and each subject. 
    
-   *  To create tidy data set observations on extracted data were grouped by 
+   *  To create tidy data set, observations on `extrat_DT` were grouped by 
    subjectID then activity. mena() function was applied to all left columns
    to gather their average.
    *  The resulting `tidy_DT` data set was sorted by subject then activity descending
