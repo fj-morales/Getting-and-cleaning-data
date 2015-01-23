@@ -55,7 +55,7 @@ Variables summary:
 
 Note: It is described only X axis variables. The same applies for Y and Z axes.
 
-subjectID:
+* *subjectID*:
   Subject's unique numeric identifier. Discrete range [1:30]
   Unit: integer number
   
