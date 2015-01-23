@@ -1,8 +1,12 @@
 ## Getting and cleaning data project
 
-This repository contains the following files/scripts:
+This repository is part of Coursera - Getting and Cleaning Data course project. 
+It uses "Human Activity Recognition Using Smartphones Data Set" 
+information to create a new tidy date set according project instructions.  
 
-- Readme.md. Repo review.
+Included files/scripts:
+
+- `Readme.md`. Repo review.
 - `run_analysis.R`. R Program 
 - `CodeBook.md`. Description of variables, data and transformations.
 
