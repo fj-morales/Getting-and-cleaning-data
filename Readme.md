@@ -7,11 +7,11 @@ instructions as follow:
 
 * Merges the training and the test sets to create one data set.
 
-1. setLabel() function combines train or test data set with its corresponding subject
+   1. setLabel() function combines train or test data set with its corresponding subject
    and activity label IDs in order to create a new data set containing complete observations
    for each subject.
    
-2. Labeled train and test data were binded into a complete data set by rows, with train data on top.
+   2. Labeled train and test data were binded into a complete data set by rows, with train data on top.
  
 * Extracts only the measurements on the mean and standard deviation for each measurement. 
 
