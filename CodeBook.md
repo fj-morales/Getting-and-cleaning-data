@@ -52,18 +52,19 @@ by some subjects. The original measurements were obtained from smartphones
 accelerometer and gyroscope sensors.
 
 Variables summary:
+
 Note: It is described only X axis variables. The same applies for Y and Z axes.
 
 subjectID:
   Subject's unique numeric identifier. Discrete range [1:30]
   Unit: integer number
   
-timeBodyAccelerationMeanXMean: 
+* timeBodyAccelerationMeanXMean: 
   Average of the mean of body acceleration in X axis from time domain. Normalized continuos 
   range [-1:1]. 
   Unit: seconds
   
-timeBodyAccelerationStandardDeviationXMean:
+* timeBodyAccelerationStandardDeviationXMean:
   Average of the standard deviation of body acceleration in X axis from time domain. 
   Normalized continuos range [-1:1].
   Unit: seconds
