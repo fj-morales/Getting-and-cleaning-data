@@ -1,36 +1,39 @@
 # GETTING AND CLEANING DATA PROJECT
 # Author: Francisco Morales
 # Version: 1.0
+# class: getdata-010
+# 2015/01/23
 #################################################
 
-#
 # Summary:
-# 1. Define function setLabel() to combine the features set wih its corresponging 
-#    subject and activity ID labels
-# 2. Apply function setLabel() to train and test sets
-# 3. Merge train and test labeled sets
+# This script performs the necessary transformations for tidying the data 
+# as required in project tasks.
 
 # Notes:
-# This script must be in the same directory as ./data
+# This script must be along with "./data" directory in the same path
+
+###############################################################################
+#
+# 1. Merges the training and the test sets to create one data set.
+#
+###############################################################################
+
+library(data.table)
 
 # Defining function setLabel()
 # Arguments: relative txt file  URLs for: subject labels, activity labels, and 
 # features' data (X_train or X_test)
 # Returns: labeled data set
-# 
-#
 
-
-library(data.table)
 setIdLabel <- function(subject_file, activity_file, feature_file){
+   
     # Reading train set, activity and subject labels into R variables
     
     subject_ID <- read.table(subject_file, stringsAsFactors = FALSE)
     activity_ID <- read.table(activity_file, stringsAsFactors = FALSE)
     feature <- read.table(feature_file, stringsAsFactors = FALSE)
-    
-        
-    # Combining train set with its labels' IDs
+         
+    # Combining train set with its subject and activity labels' IDs
     
     labeled_set <- cbind(subject_ID, activity_ID, feature)
     
@@ -53,7 +56,8 @@ train_DT <- setIdLabel("./data/train/subject_train.txt", "./data/train/y_train.t
 test_DT <- setIdLabel("./data/test/subject_test.txt", "./data/test/y_test.txt", 
                       "./data/test/X_test.txt")
 
-# Merging train and test sets
+# Merging train and test sets. 
+# complete_DT already contains subject and activity ID labels
 
 complete_DT <- rbind(train_DT, test_DT)
 
@@ -62,6 +66,12 @@ complete_DT <- rbind(train_DT, test_DT)
 feat_label <- read.table("./data/features.txt", stringsAsFactors = FALSE, sep = " ")
 setnames(complete_DT, old = 1:dim(complete_DT)[2], new= c("subject_ID", "activity_ID", feat_label[,2]))
 
+###################################################################################################
+#
+# 2. Extracts only the measurements on the mean and standard deviation for each measurement.
+#
+###################################################################################################
+
 # Extracting mean and standard deviation measurements while keeping activity and subject IDs
 library(dplyr)
 extract_DT <- select(complete_DT,1,2,matches("mean\\(|std\\(", ignore.case = FALSE))
@@ -69,13 +79,22 @@ extract_DT <- select(complete_DT,1,2,matches("mean\\(|std\\(", ignore.case = FAL
 # Set activity_ID as factors 
 extract_DT$activity_ID <- as.factor(extract_DT$activity_ID)
 
+#########################################################################################
+#
+# 3. Uses descriptive activity names to name the activities in the data set
+#
+#########################################################################################
+
 # Replacing the factor numeric levels for descriptive activity names from activity_labels.txt file
 activity_labels <- fread("./data/activity_labels.txt", stringsAsFactors = FALSE)
 levels(extract_DT$activity_ID) <- activity_labels$V2
 setnames(extract_DT, colnames(extract_DT)[2], "activity")
 
-# Descriptive Variable names
-#gsub("_|-|\\(\\)","", colnames(extract_DT))
+#########################################################################################
+#
+# 4. Appropriately labels the data set with descriptive variable names.
+#
+#########################################################################################
 
 # Removing special characters
 setnames(extract_DT, old = 1:dim(extract_DT)[2], new=gsub("_|-|\\(\\)","", colnames(extract_DT)))
@@ -89,7 +108,11 @@ setnames(extract_DT, old = 1:dim(extract_DT)[2], new=gsub("std","StandardDeviati
 setnames(extract_DT, old = 1:dim(extract_DT)[2], new=gsub("Mag","Magnitude", colnames(extract_DT)))
 setnames(extract_DT, old = 1:dim(extract_DT)[2], new=gsub("mean","Mean", colnames(extract_DT)))
 
-# Tidy data set with average for each activity and subject
+#########################################################################################
+#
+# 5. Tidy data set with average for each activity and subject
+#
+##########################################################################################
 
 tidy_DT <- extract_DT[,lapply(.SD, mean), by=c("subjectID", "activity")]
 tidy_DT <- tidy_DT[order(-subjectID, activity, decreasing = TRUE)]
