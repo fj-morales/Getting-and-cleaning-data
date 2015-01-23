@@ -14,8 +14,9 @@ tidy data set according to project's instructions.
  
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 
-   *  To extract mean and standard deviation measurements, `complete_DT` was filtered
-   by column names containing only "mean()" and "std()" strings. The resulting data became `extract_DT` data set.
+   *  To extract mean and standard deviation measurements, `complete_DT` was filtered selecting 
+   only the columns names that contain "mean()" and "std()" strings. The resulting 
+   data became `extract_DT` data set.
    
 3. Uses descriptive activity names to name the activities in the data set
 
