@@ -1,5 +1,11 @@
 ## Getting and cleaning data project
 
+This repository contains the following files/scripts:
+
+- Readme.md. Repo review.
+- `run_analysis.R`. R Program 
+- `CodeBook.md`. Description of variables, data and transformations.
+
 ### run_analysis.R script
 
 `run_analysis.R` script uses "Human Activity Recognition Using Smartphones Data Set" 
