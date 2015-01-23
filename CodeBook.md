@@ -10,12 +10,12 @@ tidy data set according to project's instructions.
    * `setLabel()` function relates subject and activity IDs with their corresponding 
       observations contained in train and test data sets.
    * Once identified subject and activity IDs, train and test sets were binded into a 
-     new data set called `complete_DT`.
+     new data set called `complete_DT`. Train data is on top.
  
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 
-   *  To extract mean and standard deviation measurements, complete data set was filtered
-   by column names containing only "mean()" and "std()" strings. It was created `extract_DT` data set.
+   *  To extract mean and standard deviation measurements, `complete_DT` was filtered
+   by column names containing only "mean()" and "std()" strings. The resulting data became `extract_DT` data set.
    
 3. Uses descriptive activity names to name the activities in the data set
 
