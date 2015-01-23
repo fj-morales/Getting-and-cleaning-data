@@ -2,12 +2,12 @@
 
 This repository is part of Coursera - Getting and Cleaning Data course project. 
 It uses "Human Activity Recognition Using Smartphones Data Set" 
-information to create a new tidy date set according project instructions.  
+information to create a new tidy date set according to project instructions.  
 
 Included files/scripts:
 
-- `Readme.md`. Repo review.
-- `run_analysis.R`. R Program 
+- `Readme.md`. This readme file.
+- `run_analysis.R`. R script.
 - `CodeBook.md`. Description of variables, data and transformations.
 
 ### run_analysis.R script
@@ -43,7 +43,6 @@ from `./data/test/` directory:
 Output file:
 
   * tidy_DT.txt
-
 
 ### CodeBook.md
 
