@@ -5,51 +5,38 @@ In this document are described the necessary transformations for tidying
 "Human Activity Recognition Using Smartphones Data Set" according project's 
 instructions as follow:
 
-* Merges the training and the test sets to create one data set.
+1. Merges the training and the test sets to create one data set.
 
    1. setLabel() function combines train or test data set with its corresponding subject
    and activity label IDs in order to create a new data set containing complete observations
    for each subject.
-   
    2. Labeled train and test data were binded into a complete data set by rows, with train data on top.
  
-* Extracts only the measurements on the mean and standard deviation for each measurement. 
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 
-1.  To extract mean and standard deviation measurements, complete data set was filtered
+   1.  To extract mean and standard deviation measurements, complete data set was filtered
    by column names containing only "mean()" and "std()" strings. It was created an extracted data set
    
-* Uses descriptive activity names to name the activities in the data set
+3. Uses descriptive activity names to name the activities in the data set
 
-1.  To make things faster and easier, activity IDs were converted.Activity 
+   1.  To make things faster and easier, activity IDs were converted.Activity 
    variable IDs were replaced by activity_labels.txt descriptive names. 
    
-* Appropriately labels the data set with descriptive variable names. 
+4. Appropriately labels the data set with descriptive variable names. 
 
-1. All special characters were removed from varible names.
-2. All abbreviations were replaced by complete words on variable names.
-3. All words in column names, except first, were capitalized to ease 
+   1. All special characters were removed from varible names.
+   2. All abbreviations were replaced by complete words on variable names.
+   3. All words in column names, except first, were capitalized to ease 
    readibility.
 
 5. From the data set in step 4, creates a second, independent tidy data set 
    with the average of each variable for each activity and each subject. 
    
-*  To create tidy data set observations on extracted data were grouped by 
+   1.  To create tidy data set observations on extracted data were grouped by 
    subjectID then activity. mena() function was applied to all left columns
    to gather their average.
-*  The resulting tidy data set was sorted by subject then activity descending
+   2.  The resulting tidy data set was sorted by subject then activity descending
    order.
-   
-
-
-1. Item 1
-  1. A corollary to the above item.
-  2. Yet another point to consider.
-2. Item 2
-  * A corollary that does not need to be ordered.
-    * This is indented four spaces, because it's two spaces further than the item above.
-    * You might want to consider making a new list.
-3. Item 3
-
 
 ### Codebook
 
