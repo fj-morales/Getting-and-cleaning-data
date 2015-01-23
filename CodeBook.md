@@ -38,9 +38,42 @@ tidy data set according to project's instructions.
 5. From the data set in step 4, creates a second, independent tidy data set 
    with the average of each variable for each activity and each subject. 
    
-   *  `tidy_DT` data set contains the observations from `extract_DT` where subjectID then activity 
-      variables were grouped and `mean()` function was applied to measurement variables
-      to gather their average.
+   *  `tidy_DT` data set contains the observations from `extract_DT` where subjectID then
+      activity variables were grouped and `mean()` function was applied to measurement 
+	  variables to gather their average.
    *  `tidy_DT` was sorted by subjectID then activity in ascending order.
 
 ### Variables
+
+The variables in tidy data set represent the average of the mean and the standard deviation 
+measurements for each subject aggregated by activity. The variables comprise time 
+and frequecy domains considering X, Y, and Z axis from certain activities carried out 
+by some subjects. The original measurements were obtained from smartphones 
+accelerometer and gyroscope sensors.
+
+Variables summary:
+Note: It is described only X axis variables. The same applies for Y and Z axes.
+
+subjectID:
+  Subject's unique numeric identifier. Discrete range [1:30]
+  Unit: integer number
+  
+timeBodyAccelerationMeanXMean: 
+  Average of the mean of body acceleration in X axis from time domain. Normalized continuos 
+  range [-1:1]. 
+  Unit: seconds
+  
+timeBodyAccelerationStandardDeviationXMean:
+  Average of the standard deviation of body acceleration in X axis from time domain. 
+  Normalized continuos range [-1:1].
+  Unit: seconds
+  
+timeGravityAccelerationMeanXMean: 
+  Average of the mean of gravity acceleration in X axis from time domain. 
+  Normalized continuos range [-1:1].
+  Unit: seconds
+  
+timeGravityAccelerationStandardDeviationXMean:
+  Average of the standard deviation of gravity acceleration in X axis from time domain.
+  Normalized continuos range [-1:1].
+  Unit: seconds
