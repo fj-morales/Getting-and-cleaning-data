@@ -59,22 +59,22 @@ Note: It is described only X axis variables. The same applies for Y and Z axes.
   - Subject's unique numeric identifier. Discrete range [1:30]
   Unit: integer number
   
-* **timeBodyAccelerationMeanXMean**: 
+* **timeBodyAccelerationMeanXAverage**: 
   Average of the mean of body acceleration in X axis from time domain. Normalized continuos 
   range [-1:1]. 
   Unit: seconds
   
-* timeBodyAccelerationStandardDeviationXMean:
+* timeBodyAccelerationStandardDeviationXAverage:
   Average of the standard deviation of body acceleration in X axis from time domain. 
   Normalized continuos range [-1:1].
   Unit: seconds
   
-timeGravityAccelerationMeanXMean: 
+timeGravityAccelerationMeanXAverage: 
   Average of the mean of gravity acceleration in X axis from time domain. 
   Normalized continuos range [-1:1].
   Unit: seconds
   
-timeGravityAccelerationStandardDeviationXMean:
+timeGravityAccelerationStandardDeviationXAverage:
   Average of the standard deviation of gravity acceleration in X axis from time domain.
   Normalized continuos range [-1:1].
   Unit: seconds

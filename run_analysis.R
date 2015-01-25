@@ -120,7 +120,7 @@ setnames(extract_DT, old = 1:dim(extract_DT)[2], new=gsub("mean","Mean", colname
 
 tidy_DT <- extract_DT[,lapply(.SD, mean), by=c("subjectID", "activity")]
 tidy_DT <- tidy_DT[order(-subjectID, activity, decreasing = TRUE)]
-setnames(tidy_DT, old = 3:dim(tidy_DT)[2], new=gsub("$","Mean", colnames(tidy_DT)[3:dim(tidy_DT)[2]]))
+setnames(tidy_DT, old = 3:dim(tidy_DT)[2], new=gsub("$","Average", colnames(tidy_DT)[3:dim(tidy_DT)[2]]))
 
 # Saving tidy data set as txt file
 write.table(tidy_DT, "./tidy_DT.txt", row.names = FALSE)
