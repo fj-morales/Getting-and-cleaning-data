@@ -47,5 +47,5 @@ Output file:
 ### CodeBook.md
 
 This document describes the transformations `run_analysis.R` script performs over 
-train and test data sets in order to get a processed tidy data set.
+train and test data sets in order to get a processed tidy data to save it to a txt file.
 The variables and observations from the resulting tidy data set are also described including their ranges.
