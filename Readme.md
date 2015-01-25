@@ -46,6 +46,6 @@ Output file:
 
 ### CodeBook.md
 
-This document describes the transformations `run_analysis.R` performs over the 
+This document describes the transformations `run_analysis.R` script performs over 
 train and test data sets in order to get a processed tidy data set.
-The variables and observations from the resulting tidy data set are also described.
+The variables and observations from the resulting tidy data set are also described including their ranges.
