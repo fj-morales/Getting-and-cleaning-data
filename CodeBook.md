@@ -56,25 +56,175 @@ Variables summary:
 Note: It is described only X axis variables. The same applies for Y and Z axes.
 
 * **subjectID**:
-  - Subject's unique numeric identifier. Discrete range [1:30]
+  Subject's unique numeric identifier. Discrete range [1:30]
   Unit: integer number
   
 * **timeBodyAccelerationMeanXAverage**: 
-  Average of the mean of body acceleration in X axis from time domain. Normalized continuos 
+  Average of the mean of body acceleration in X axis from time domain. Normalized continuous 
   range [-1:1]. 
   Unit: seconds
   
-* timeBodyAccelerationStandardDeviationXAverage:
+* **timeBodyAccelerationStandardDeviationXAverage**:
   Average of the standard deviation of body acceleration in X axis from time domain. 
-  Normalized continuos range [-1:1].
+  Normalized continuous range [-1:1].
   Unit: seconds
   
-timeGravityAccelerationMeanXAverage: 
+* **timeGravityAccelerationMeanXAverage**: 
   Average of the mean of gravity acceleration in X axis from time domain. 
-  Normalized continuos range [-1:1].
+  Normalized continuous range [-1:1].
   Unit: seconds
   
-timeGravityAccelerationStandardDeviationXAverage:
+* **timeGravityAccelerationStandardDeviationXAverage**:
   Average of the standard deviation of gravity acceleration in X axis from time domain.
-  Normalized continuos range [-1:1].
+  Normalized continuous range [-1:1].
   Unit: seconds
+  
+* **timeBodyAccelerationJerkMeanXAverage**:
+  Average of the mean of body acceleration jerk in X axis from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeBodyAccelerationJerkStandardDeviationXAverage**:
+  Average of the standard deviation of body acceleration jerk in X axis from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeBodyGyroMeanXAverage**:
+  Average of the mean of body gyro in X axis from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeBodyGyroStandardDeviationXAverage**:
+  Average of the standard deviation of body gyro in X axis from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+
+* **timeBodyGyroJerkMeanXAverage**:
+  Average of the mean of body gyro jerk in X axis from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeBodyGyroJerkStandardDeviationXAverage**:
+  Average of the standard deviation of body gyro jerk in X axis from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeBodyAccelerationMagnitudeMeanAverage**:
+  Average of the mean of body acceleration magnitude from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeBodyAccelerationMagnitudeStandardDeviationAverage**:
+  Average of the standard deviation of body acceleration magnitude from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeGravityAccelerationMagnitudeMeanAverage**:
+  Average of the mean of gravity acceleration magnitude from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeGravityAccelerationMagnitudeStandardDeviationAverage**:
+  Average of the standard deviation of gravity acceleration magnitude from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeBodyAccelerationJerkMagnitudeMeanAverage**:
+  Average of the mean of body acceleration jerk magnitude from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeBodyAccelerationJerkMagnitudeStandardDeviationAverage**:
+  Average of the standard deviation of body acceleration jerk magnitude from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeBodyGyroMagnitudeMeanAverage**:
+  Average of the mean of body gyro magnitude from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeBodyGyroMagnitudeStandardDeviationAverage**:
+  Average of the standard deviation of body gyro magnitude from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeBodyGyroJerkMagnitudeMeanAverage**:
+  Average of the mean of body gyro jerk magnitude from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **timeBodyGyroJerkMagnitudeStandardDeviationAverage**:
+  Average of the standard deviation of body gyro jerk magnitude from time domain.
+  Normalized continuous range [-1:1].
+  Unit: seconds
+  
+* **frequencyBodyAccelerationMeanXAverage**:
+  Average of the mean of body acceleration in X axis from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
+ 
+* **frequencyBodyAccelerationStandardDeviationXAverage**:
+  Average of the standard deviation of body acceleration in X axis from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
+ 
+* **frequencyBodyAccelerationJerkMeanXAverage**:
+  Average of the mean of body acceleration jerk in X axis from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
+
+* **frequencyBodyAccelerationJerkStandardDeviationXAverage**:
+  Average of the standard deviation of body acceleration jerk in X axis from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
+
+* **frequencyBodyGyroMeanXAverage**:
+  Average of the mean of body gyro in X axis from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
+
+* **frequencyBodyGyroStandardDeviationXAverage**:
+  Average of the standard deviation of body gyro in X axis from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
+ 
+* **frequencyBodyAccelerationMagnitudeMeanAverage**:
+  Average of the mean of body acceleration magnitude from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
+ 
+* **frequencyBodyAccelerationMagnitudeStandardDeviationAverage**:
+  Average of the standard deviation of body acceleration magnitude from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
+ 
+* **frequencyBodyBodyAccelerationJerkMagnitudeMeanAverage**:
+  Average of the mean of body body acceleration jerk magnitude from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
+ 
+* **frequencyBodyBodyAccelerationJerkMagnitudeStandardDeviationAverage**:
+  Average of the standard deviation of body body acceleration jerk magnitude from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
+ 
+* **frequencyBodyBodyGyroMagnitudeMeanAverage**:
+  Average of the mean of body body gyro magnitude from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
+ 
+* **frequencyBodyBodyGyroMagnitudeStandardDeviationAverage**:
+  Average of the standard deviation of body body gyro magnitude from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
+ 
+* **frequencyBodyBodyGyroJerkMagnitudeMeanAverage**:
+  Average of the mean of body body gyro jerk magnitude from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
+  
+* **frequencyBodyBodyGyroJerkMagnitudeStandardDeviationAverage**:
+  Average of the standard deviation of body body gyro jerk magnitude from frequency domain.
+  Normalized continuous range [-1:1].
+  Unit: hertz
