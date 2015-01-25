@@ -58,7 +58,18 @@ Note: It is described only X axis variables. The same applies for Y and Z axes.
 * **subjectID**:
   Subject's unique numeric identifier. Discrete range [1:30]
   Unit: integer number
-  
+ 
+* **activity**:
+  Activity description.
+  Qualitative variable.
+  Values:
+  1 WALKING
+  2 WALKING_UPSTAIRS
+  3 WALKING_DOWNSTAIRS
+  4 SITTING
+  5 STANDING
+  6 LAYING
+    
 * **timeBodyAccelerationMeanXAverage**: 
   Average of the mean of body acceleration in X axis from time domain. Normalized continuous 
   range [-1:1]. 
