@@ -17,7 +17,7 @@ information to create a new tidy date set according to Coursera - Getting and
 Cleaning Data course project.
 
 `run_analysis.R` identifies subject and activity in train and test observations, 
-then puts train and test data together. This script insolates mean an standard 
+then puts train and test data together. This script isolates mean an standard 
 deviation measurements and assigns descriptive names to variables. It calculates 
 the average of each measurement aggregating it by activity for every subject. Finally, 
 it saves the resulting tidy data set on a file.
