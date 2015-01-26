@@ -22,7 +22,7 @@ tidy data set according to project's instructions.
    
 3. Uses descriptive activity names to name the activities in the data set
 
-   *  `activityID` variable was converted to factor. `activityID` factor levels
+   *  `activityID` variable was converted to factor. `activityID`. Factor levels
       were replaced with `activity_labels.txt` descriptive names. 
    
 4. Appropriately labels the data set with descriptive variable names. 
