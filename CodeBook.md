@@ -53,7 +53,7 @@ accelerometer and gyroscope sensors.
 
 Variables summary:
 
-Note: It is described only X axis variables. The same applies for Y and Z axes.
+Note: It is described only X axis variables. The same description applies for Y and Z axes.
 
 * **subjectID**:
   Subject's unique numeric identifier. Discrete range [1:30]
